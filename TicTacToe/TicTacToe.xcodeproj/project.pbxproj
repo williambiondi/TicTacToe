@@ -14,6 +14,7 @@
 		C97CA0222267383A003843EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CA0202267383A003843EA /* LaunchScreen.storyboard */; };
 		C97CA02D2267383B003843EA /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CA02C2267383B003843EA /* TicTacToeTests.swift */; };
 		C97CA0382267383B003843EA /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CA0372267383B003843EA /* TicTacToeUITests.swift */; };
+		C9B2AE4D2267B4FC00ED9EC9 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2AE4C2267B4FC00ED9EC9 /* CustomButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C97CA0332267383B003843EA /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97CA0372267383B003843EA /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
 		C97CA0392267383B003843EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B2AE4C2267B4FC00ED9EC9 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C97CA01722673839003843EA /* AppDelegate.swift */,
+				C9B2AE4C2267B4FC00ED9EC9 /* CustomButtons.swift */,
 				C97CA0192267383A003843EA /* ViewController.swift */,
 				C97CA01B2267383A003843EA /* Main.storyboard */,
 				C97CA01E2267383A003843EA /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97CA01A2267383A003843EA /* ViewController.swift in Sources */,
+				C9B2AE4D2267B4FC00ED9EC9 /* CustomButtons.swift in Sources */,
 				C97CA01822673839003843EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

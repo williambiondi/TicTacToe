@@ -29,7 +29,7 @@ class ViewController: UIViewController {
                 board[sender.tag - 1] = 1
             }
             else{
-                sender.setImage(UIImage(named: "circle.png"), for: UIControl.State())
+                sender.setImage(UIImage(named: "knot.png"), for: UIControl.State())
                 winner = 2
                 nextTurn = 0
                 board[sender.tag - 1] = 2
