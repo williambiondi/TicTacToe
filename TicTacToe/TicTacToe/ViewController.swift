@@ -58,6 +58,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func newGame(_ sender: Any) {
+        reset.isHidden = true
         board = [0,0,0,0,0,0,0,0,0]
         turn = 1
         winner = -1
@@ -65,7 +66,7 @@ class ViewController: UIViewController {
             let cellButton = view.viewWithTag(cell) as! UIButton
             cellButton.setImage(nil, for: UIControl.State())
         }
-        label.text = "Turn\(turn), It's\(players[winner + 1]) turn"
+        label.text = "Turn\(turn), It's \(players[winner + 1]) turn"
     }
     
     
