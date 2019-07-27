@@ -17,12 +17,13 @@ class ViewController: UIViewController {
     var winner = -1
     var nextTurn = -1
     
-    @IBOutlet weak var reset: UIButton!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var reset: UIButton!
     @IBAction func fillCell(_ sender: AnyObject) {
         //con il tag del sender identifico la cella toccata
         if board[sender.tag - 1] == 0 {
             if turn % 2 != 0{
+                print(sender)
                 sender.setImage(UIImage(named: "cross.png"), for: UIControl.State()) //assegno l'immagine al bottone
                 winner = 1
                 nextTurn = 1
@@ -40,7 +41,7 @@ class ViewController: UIViewController {
             label.text = "This cell is already taken, retry"
         }
         turn += 1
-        label.text = "Turn \(turn) :It's \(players[nextTurn]) turn"
+        label.text = "Turn \(turn), It's \(players[nextTurn]) turn"
         for combo in winningCombo {
             if board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]] && board[combo[0]] != 0 && board[combo[1]] != 0 && board[combo[2]] != 0{
                 label.text = "\(players[winner - 1]) has won the game!"
@@ -56,7 +57,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func startNewGame(_ sender: Any) {
+    @IBAction func newGame(_ sender: Any) {
         board = [0,0,0,0,0,0,0,0,0]
         turn = 1
         winner = -1
@@ -64,8 +65,11 @@ class ViewController: UIViewController {
             let cellButton = view.viewWithTag(cell) as! UIButton
             cellButton.setImage(nil, for: UIControl.State())
         }
-        label.text = "Turn:\(turn) It's\(players[winner + 1]) turn"
+        label.text = "Turn\(turn), It's\(players[winner + 1]) turn"
     }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
